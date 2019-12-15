@@ -1,2 +1,2 @@
 Brain games
-[![Maintainability](https://api.codeclimate.com/v1/badges/28cc9f2a226aa8057a0d/maintainability)](https://codeclimate.com/github/naveuz/project-lvl1-s98/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c06458aaf3263c02b8e5/maintainability)](https://codeclimate.com/github/rentery/php-project-lvl1/maintainability)
