@@ -1,0 +1,16 @@
+#!/usr/bin/php
+
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use function BrainGames\Cli\runEven;
+use function BrainGames\Even\even;
+use function BrainGames\Cli\welcomeEven;
+use function BrainGames\Cli\hello;
+use function cli\prompt;
+
+welcomeEven();
+$playerName = prompt('May I have your name?');
+runEven($playerName);
+even($playerName);

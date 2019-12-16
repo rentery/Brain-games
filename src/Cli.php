@@ -1,13 +1,18 @@
 <?php
 
-  namespace BrainGames\Cli;
+namespace BrainGames\Cli;
 
-  use function cli\line;
-  use function cli\prompt;
+use function cli\line;
+use function cli\prompt;
 
-function run()
+
+function welcomeEven()
 {
     line('Welcome to the Brain Game!');
-    $name = prompt('May I have your name?');
-    return line("Hello, %s!", $name);
+    line("Answer \"yes\" if the number is even, otherwise answer \"no\".\n");
+}
+
+function runEven($playerName)
+{
+    return line("Hello, %s! \n", $playerName);
 }
