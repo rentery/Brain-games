@@ -2,7 +2,6 @@
 
 namespace BrainGames\Even;
 
-
 use function cli\line;
 use function cli\prompt;
 
@@ -31,8 +30,6 @@ function even($userName)
             line("{$userAnswer} is wrong answer ;(. Correct answer was 'no'.");
             line("Let's try again, {$userName}!");
             break;
-        }   
+        }
     }
 }
-
-
