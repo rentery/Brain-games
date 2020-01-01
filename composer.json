@@ -1,6 +1,6 @@
 {
     "name": "dekabruga/php-project-lvl1",
-    "bin": ["bin/brain-games", "bin/brain-even"],
+    "bin": ["bin/brain-games", "bin/brain-even", "brain-calc"],
     "description": "Brain games",
     "type": "project",
     "scripts" : {
@@ -9,7 +9,8 @@
     "autoload" : {
         "files" : [
             "src/Cli.php",
-            "src/Even.php"
+            "games/Even.php",
+            "games/Calc.php"
         ]
     },
     "require": {
