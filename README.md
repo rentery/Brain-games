@@ -3,6 +3,4 @@ Brain games
 [![Build Status](https://travis-ci.com/rentery/php-project-lvl1.svg?branch=master)](https://travis-ci.com/rentery/php-project-lvl1)
 
 
-Installation
-With Composer:
-composer global require dekabruga/php-project-lvl1
+[![asciicast](https://asciinema.org/a/mkP33lkoYXQs0nw5zQopM84OT.svg)](https://asciinema.org/a/mkP33lkoYXQs0nw5zQopM84OT)
