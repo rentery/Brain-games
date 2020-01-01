@@ -30,4 +30,3 @@ function game($gameData)
     }
     line('Congratulations, %s!', $userName);
 }
-
