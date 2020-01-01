@@ -5,7 +5,6 @@ namespace BrainGames\Calc;
 use function BrainGames\Cli\game;
 use function BrainGames\Cli\welcome;
 
-
 function resultOfCulc($operator, $operand1, $operand2)
 {
     switch ($operator) {

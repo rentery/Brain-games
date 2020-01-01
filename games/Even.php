@@ -5,8 +5,6 @@ namespace BrainGames\Even;
 use function BrainGames\Cli\game;
 use function BrainGames\Cli\welcome;
 
-
-
 function isEven($question)
 {
     return $question % 2;
@@ -24,7 +22,3 @@ function even()
     $gameData = [$userName, $questions, $correctAnswers];
     game($gameData);
 }
-
-
-
-
