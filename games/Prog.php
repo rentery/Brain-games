@@ -5,8 +5,6 @@ namespace BrainGames\Prog;
 use function BrainGames\Cli\game;
 use function BrainGames\Cli\welcome;
 
-
-
 function prog()
 {
     $gameRule = 'What number is missing in the progression?';
