@@ -13,6 +13,7 @@ function welcome($gameRule)
     line();
     $userName = prompt('May I have your name?');
     line('Hello, %s!', $userName);
+    line();
     return $userName;
 }
 
