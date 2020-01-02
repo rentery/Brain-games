@@ -1,5 +1,6 @@
 {
     "name": "dekabruga/php-project-lvl1",
+    "keywords": ["games", "brain"],
     "bin": ["bin/brain-games",
             "bin/brain-even",
             "bin/brain-calc",
@@ -7,8 +8,15 @@
             "bin/brain-progression",
             "bin/brain-prime"
     ],
-    "description": "Brain games",
+
     "type": "project",
+    "authors": [
+        {
+          "name": "Gleb",
+          "email": "gleb__l@mail.ru"
+        }
+    ],
+    "description": "Brain games",
     "scripts" : {
         "phpcs": "phpcs"
     },

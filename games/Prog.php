@@ -18,7 +18,6 @@ function getProgression($progression, $char)
     return trim($question);
 }
 
-
 function prog()
 {
     $gameRule = 'What number is missing in the progression?';
