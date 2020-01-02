@@ -1,6 +1,12 @@
 {
     "name": "dekabruga/php-project-lvl1",
-    "bin": ["bin/brain-games", "bin/brain-even", "brain-calc", "brain-gcd", "brain-progression"],
+    "bin": ["bin/brain-games",
+            "bin/brain-even",
+            "brain-calc",
+            "brain-gcd",
+            "brain-progression",
+            "brain-prime"
+    ],
     "description": "Brain games",
     "type": "project",
     "scripts" : {
@@ -12,7 +18,8 @@
             "games/Even.php",
             "games/Calc.php",
             "games/Gcd.php",
-            "games/Prog.php"
+            "games/Prog.php",
+            "games/Prime.php"
         ]
     },
     "require": {
