@@ -5,25 +5,26 @@ namespace BrainGames\Prime;
 use function BrainGames\Cli\game;
 use function BrainGames\Cli\welcome;
 
+const BRAIN_PRIME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const ARRAY_DATA_SIZE = 3;
+
 function isPrime($number)
 {
     for ($i = 2; $i < sqrt($number); $i++) {
         if ($number % $i == 0) {
-            return "no";
+            return false;
         }
     }
-    return "yes";
+    return true;
 }
 
 function prime()
 {
-    $gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-    $userName = welcome($gameRule);
-    for ($i = 0; $i < 3; $i++) {
+    for ($prepareData = 0; $prepareData < ARRAY_DATA_SIZE; $prepareData++) {
         $question = rand(2, 4000);
-        $correctAnswers[] = isPrime($question);
+        $correctAnswers[] = isPrime($question) ? 'yes' : 'no';
         $questions[] = $question;
     }
-    $gameData = [$userName, $questions, $correctAnswers];
+    $gameData = [BRAIN_PRIME_RULE, $questions, $correctAnswers];
     game($gameData);
 }

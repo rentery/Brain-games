@@ -5,6 +5,9 @@ namespace BrainGames\Calc;
 use function BrainGames\Cli\game;
 use function BrainGames\Cli\welcome;
 
+const BRAIN_CALC_RULE = 'What is the result of the expression?';
+const ARRAY_DATA_SIZE = 3;
+
 function resultOfCulc($operator, $operand1, $operand2)
 {
     switch ($operator) {
@@ -17,13 +20,10 @@ function resultOfCulc($operator, $operand1, $operand2)
     }
 }
 
-
 function calc()
 {
-    $gameRule = 'What is the result of the expression?';
-    $userName = welcome($gameRule);
     $operators = ['+', '-', '*'];
-    for ($i = 0; $i < 3; $i++) {
+    for ($prepareData = 0; $prepareData < ARRAY_DATA_SIZE; $prepareData++) {
         $operand1 = rand(1, 50);
         $operand2 = rand(1, 50);
         $randOperator = array_rand($operators);
@@ -31,6 +31,6 @@ function calc()
         $correctAnswers[] = resultOfCulc($operator, $operand1, $operand2);
         $questions[] = "{$operand1} {$operator} {$operand2}";
     }
-    $gameData = [$userName, $questions, $correctAnswers];
+    $gameData = [BRAIN_CALC_RULE, $questions, $correctAnswers];
     game($gameData);
 }

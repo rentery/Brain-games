@@ -5,6 +5,9 @@ namespace BrainGames\Prog;
 use function BrainGames\Cli\game;
 use function BrainGames\Cli\welcome;
 
+const BRAIN_PROG_RULE = 'What number is missing in the progression?';
+const ARRAY_DATA_SIZE = 3;
+
 function getProgression($progression, $char)
 {
     $question = "";
@@ -20,14 +23,12 @@ function getProgression($progression, $char)
 
 function prog()
 {
-    $gameRule = 'What number is missing in the progression?';
-    $userName = welcome($gameRule);
     $progression = range(5, 23, 2);
-    for ($i = 0; $i < 3; $i++) {
+    for ($prepareData = 0; $prepareData < ARRAY_DATA_SIZE; $prepareData++) {
         $char = array_rand($progression);
         $correctAnswers[] = $progression[$char];
         $questions[] = getProgression($progression, $char);
     }
-    $gameData = [$userName, $questions, $correctAnswers];
+    $gameData = [BRAIN_PROG_RULE, $questions, $correctAnswers];
     game($gameData);
 }
