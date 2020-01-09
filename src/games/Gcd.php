@@ -22,5 +22,5 @@ function gcd()
         $questions[] = "{$char1} {$char2}";
     }
     $gameData = [BRAIN_GCD_RULE, $questions, $correctAnswers];
-    game($gameData);
+    startGame($gameData);
 }
