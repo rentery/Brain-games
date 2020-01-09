@@ -7,14 +7,14 @@ use const BrainGames\Cli\ROUND_COUNT;
 
 const BRAIN_PROG_RULE = 'What number is missing in the progression?';
 
-function getProgression($progression, $char)
+function getQuestion($progression, $char)
 {
     $question = "";
     foreach ($progression as $key => $value) {
         if ($key == $char) {
-            $question .= ".. ";
+            $question = "$question ..";
         } else {
-            $question .= "{$value} ";
+            $question = "$question $value";
         }
     }
     return trim($question);
@@ -26,7 +26,7 @@ function prog()
     for ($i = 0; $i < ROUND_COUNT; $i++) {
         $char = array_rand($progression);
         $correctAnswers[] = $progression[$char];
-        $questions[] = getProgression($progression, $char);
+        $questions[] = getQuestion($progression, $char);
     }
     $gameData = [BRAIN_PROG_RULE, $questions, $correctAnswers];
     startGame($gameData);
