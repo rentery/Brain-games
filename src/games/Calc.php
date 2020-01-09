@@ -28,7 +28,7 @@ function calc($operators)
         $operand2 = rand(1, 50);
         $randOperator = array_rand($operators);
         $operator = $operators[$randOperator];
-        $correctAnswers[] = calculateExpresson($operator, $operand1, $operand2);
+        $correctAnswers[] = calculateExpression($operator, $operand1, $operand2);
         $questions[] = "{$operand1} {$operator} {$operand2}";
     }
     $gameData = [BRAIN_CALC_RULE, $questions, $correctAnswers];
