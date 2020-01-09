@@ -3,7 +3,6 @@
 namespace BrainGames\games\Prog;
 
 use function BrainGames\Cli\startGame;
-use function BrainGames\Cli\welcome;
 
 const BRAIN_PROG_RULE = 'What number is missing in the progression?';
 const ARRAY_DATA_SIZE = 3;
