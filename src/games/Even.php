@@ -3,9 +3,9 @@
 namespace BrainGames\games\Even;
 
 use function BrainGames\Cli\startGame;
+use const BrainGames\Cli\ROUND_COUNT;
 
 const BRAIN_EVEN_RULE = 'Answer "yes" if the number is even, otherwise answer "no"';
-const ARRAY_DATA_SIZE = 3;
 
 function isEven($question)
 {
@@ -14,7 +14,7 @@ function isEven($question)
 
 function even()
 {
-    for ($prepareData = 0; $prepareData < ARRAY_DATA_SIZE; $prepareData++) {
+    for ($i = 0; $i < ROUND_COUNT; $i++) {
         $question = rand(1, 50);
         $correctAnswers[] = isEven($question) == 0 ? 'yes' : 'no';
         $questions[] = $question;

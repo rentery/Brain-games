@@ -3,9 +3,9 @@
 namespace BrainGames\games\Gcd;
 
 use function BrainGames\Cli\startGame;
+use const BrainGames\Cli\ROUND_COUNT;
 
 const BRAIN_GCD_RULE = 'Find the greatest common divisor of given numbers.';
-const ARRAY_DATA_SIZE = 3;
 
 function getGcd($a, $b)
 {
@@ -15,7 +15,7 @@ function getGcd($a, $b)
 
 function gcd()
 {
-    for ($prepareData = 0; $prepareData < ARRAY_DATA_SIZE; $prepareData++) {
+    for ($i = 0; $i < ROUND_COUNT; $i++) {
         $char1 = rand(1, 100);
         $char2 = rand(1, 100);
         $correctAnswers[] = getGcd($char1, $char2);

@@ -3,9 +3,10 @@
 namespace BrainGames\games\Prime;
 
 use function BrainGames\Cli\startGame;
+use const BrainGames\Cli\ROUND_COUNT;
 
 const BRAIN_PRIME_RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".';
-const ARRAY_DATA_SIZE = 3;
+
 
 function isPrime($number)
 {
@@ -19,7 +20,7 @@ function isPrime($number)
 
 function prime()
 {
-    for ($prepareData = 0; $prepareData < ARRAY_DATA_SIZE; $prepareData++) {
+    for ($i = 0; $i < ROUND_COUNT; $i++) {
         $question = rand(2, 4000);
         $correctAnswers[] = isPrime($question) ? 'yes' : 'no';
         $questions[] = $question;
