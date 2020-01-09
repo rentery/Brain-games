@@ -1,8 +1,7 @@
 {
     "name": "dekabruga/php-project-lvl1",
     "keywords": ["games", "brain"],
-    "bin": ["bin/brain-games",
-            "bin/brain-even",
+    "bin": ["bin/brain-even",
             "bin/brain-calc",
             "bin/brain-gcd",
             "bin/brain-progression",
@@ -23,11 +22,11 @@
     "autoload" : {
         "files" : [
             "src/Cli.php",
-            "games/Even.php",
-            "games/Calc.php",
-            "games/Gcd.php",
-            "games/Prog.php",
-            "games/Prime.php"
+            "src/games/Even.php",
+            "src/games/Calc.php",
+            "src/games/Gcd.php",
+            "src/games/Prog.php",
+            "src/games/Prime.php"
         ]
     },
     "require": {

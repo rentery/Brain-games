@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Prime;
+namespace BrainGames\games\Prime;
 
 use function BrainGames\Cli\game;
 use function BrainGames\Cli\welcome;
