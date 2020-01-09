@@ -18,11 +18,13 @@ function startGame($gameData)
     line('Hello, %s!', $userName);
     line();
     for ($roundCounter = 0; $roundCounter < ROUND_COUNT; $roundCounter++) {
+        $correctAnswer = $correctAnswers[$roundCounter];
         line("Question: %s", $questions[$roundCounter]);
         $userAnswer = prompt("Your answer");
-        if ($userAnswer != $correctAnswers[$roundCounter]) {
-            err("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswers[$roundCounter]);
-            return line("Let's try again, %s!", $userName);
+        if ($userAnswer != $correctAnswer) {
+            err("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
+            line("Let's try again, %s!", $userName);
+            break;
         }
         line('Correct!');
     }
