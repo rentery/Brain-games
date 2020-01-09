@@ -3,6 +3,7 @@
 namespace BrainGames\games\Even;
 
 use function BrainGames\Cli\startGame;
+
 use const BrainGames\Cli\ROUND_COUNT;
 
 const BRAIN_EVEN_RULE = 'Answer "yes" if the number is even, otherwise answer "no"';

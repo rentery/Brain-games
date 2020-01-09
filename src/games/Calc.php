@@ -3,6 +3,7 @@
 namespace BrainGames\games\Calc;
 
 use function BrainGames\Cli\startGame;
+
 use const BrainGames\Cli\ROUND_COUNT;
 
 const BRAIN_CALC_RULE = 'What is the result of the expression?';

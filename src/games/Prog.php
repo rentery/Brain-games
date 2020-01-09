@@ -3,6 +3,7 @@
 namespace BrainGames\games\Prog;
 
 use function BrainGames\Cli\startGame;
+
 use const BrainGames\Cli\ROUND_COUNT;
 
 const BRAIN_PROG_RULE = 'What number is missing in the progression?';
