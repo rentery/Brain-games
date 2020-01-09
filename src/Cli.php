@@ -6,7 +6,7 @@ use function cli\line;
 use function cli\prompt;
 use function cli\err;
 
-const ROUND_NUMBER = 3;
+const ROUND_COUNT = 3;
 
 function startGame($gameData)
 {
@@ -17,7 +17,7 @@ function startGame($gameData)
     $userName = prompt('May I have your name?');
     line('Hello, %s!', $userName);
     line();
-    for ($roundCounter = 0; $roundCounter < ROUND_NUMBER; $roundCounter++) {
+    for ($roundCounter = 0; $roundCounter < ROUND_COUNT; $roundCounter++) {
         line("Question: %s", $questions[$roundCounter]);
         $userAnswer = prompt("Your answer");
         if ($userAnswer != $correctAnswers[$roundCounter]) {
