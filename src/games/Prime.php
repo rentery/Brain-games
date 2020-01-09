@@ -11,7 +11,7 @@ const BRAIN_PRIME_RULE = 'Answer "yes" if given number is prime. Otherwise answe
 function isPrime($number)
 {
     for ($i = 2; $i < sqrt($number); $i++) {
-        if ($number % $i == 0) {
+        if ($number % $i == 0 || $number < 2) {
             return false;
         }
     }
@@ -21,7 +21,7 @@ function isPrime($number)
 function prime()
 {
     for ($i = 0; $i < ROUND_COUNT; $i++) {
-        $question = rand(2, 4000);
+        $question = rand(0, 4000);
         $correctAnswers[] = isPrime($question) ? 'yes' : 'no';
         $questions[] = $question;
     }
