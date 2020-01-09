@@ -5,10 +5,11 @@ namespace BrainGames\Cli;
 use function cli\line;
 use function cli\prompt;
 use function cli\err;
+use function cli\render;
 
 const ROUND_COUNT = 3;
 
-function startGame($gameData)
+function startGame($gameData) :void
 {
     [$gameRule, $questions, $correctAnswers] = $gameData;
     line('Welcome to the Brain Game!');
@@ -24,7 +25,7 @@ function startGame($gameData)
         if ($userAnswer != $correctAnswer) {
             err("'%s' is wrong answer ;(. Correct answer was '%s'.", $userAnswer, $correctAnswer);
             line("Let's try again, %s!", $userName);
-            break;
+            return;
         }
         line('Correct!');
     }
