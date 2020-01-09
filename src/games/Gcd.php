@@ -2,7 +2,7 @@
 
 namespace BrainGames\games\Gcd;
 
-use function BrainGames\Cli\game;
+use function BrainGames\Cli\startGame;
 use function BrainGames\Cli\welcome;
 
 const BRAIN_GCD_RULE = 'Find the greatest common divisor of given numbers.';

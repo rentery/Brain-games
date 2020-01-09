@@ -2,7 +2,7 @@
 
 namespace BrainGames\games\Calc;
 
-use function BrainGames\Cli\game;
+use function BrainGames\Cli\startGame;
 use function BrainGames\Cli\welcome;
 
 const BRAIN_CALC_RULE = 'What is the result of the expression?';
