@@ -9,7 +9,7 @@ use function cli\render;
 
 const ROUND_COUNT = 3;
 
-function startGame($gameData) :void
+function startGame($gameData): void
 {
     [$gameRule, $questions, $correctAnswers] = $gameData;
     line('Welcome to the Brain Game!');
