@@ -26,5 +26,5 @@ function prime()
         $questions[] = $question;
     }
     $gameData = [BRAIN_PRIME_RULE, $questions, $correctAnswers];
-    game($gameData);
+    startGame($gameData);
 }

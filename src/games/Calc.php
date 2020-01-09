@@ -1,6 +1,6 @@
 <?php
 
-namespace BrainGames\Calc;
+namespace BrainGames\games\Calc;
 
 use function BrainGames\Cli\game;
 use function BrainGames\Cli\welcome;
@@ -32,5 +32,5 @@ function calc()
         $questions[] = "{$operand1} {$operator} {$operand2}";
     }
     $gameData = [BRAIN_CALC_RULE, $questions, $correctAnswers];
-    game($gameData);
+    startGame($gameData);
 }

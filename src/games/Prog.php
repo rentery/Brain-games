@@ -30,5 +30,5 @@ function prog()
         $questions[] = getProgression($progression, $char);
     }
     $gameData = [BRAIN_PROG_RULE, $questions, $correctAnswers];
-    game($gameData);
+    startGame($gameData);
 }

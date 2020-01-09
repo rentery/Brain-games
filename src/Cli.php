@@ -8,7 +8,7 @@ use function cli\err;
 
 const ROUND_NUMBER = 3;
 
-function game($gameData)
+function startGame($gameData)
 {
     [$gameRule, $questions, $correctAnswers] = $gameData;
     line('Welcome to the Brain Game!');

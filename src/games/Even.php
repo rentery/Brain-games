@@ -21,5 +21,5 @@ function even()
         $questions[] = $question;
     }
     $gameData = [BRAIN_EVEN_RULE, $questions, $correctAnswers];
-    game($gameData);
+    startGame($gameData);
 }
