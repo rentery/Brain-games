@@ -5,7 +5,6 @@ namespace BrainGames\Cli;
 use function cli\line;
 use function cli\prompt;
 use function cli\err;
-use function cli\render;
 
 const ROUND_COUNT = 3;
 
