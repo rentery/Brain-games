@@ -12,7 +12,7 @@ const BRAIN_PRIME_RULE = 'Answer "yes" if given number is prime. Otherwise answe
 function isPrime($number)
 {
     for ($i = 2; $i < sqrt($number); $i++) {
-        if ($number % $i == 0 || $number < 2) {
+        if ($number < 2 || $number % $i == 0) {
             return false;
         }
     }
