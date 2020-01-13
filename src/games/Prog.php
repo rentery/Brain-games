@@ -2,9 +2,9 @@
 
 namespace BrainGames\games\Prog;
 
-use function BrainGames\Cli\startGame;
+use function BrainGames\Cli\runGame;
 
-use const BrainGames\Cli\ROUND_COUNT;
+use const BrainGames\Cli\ROUNDS_COUNT;
 
 const BRAIN_PROG_RULE = 'What number is missing in the progression?';
 
@@ -24,11 +24,11 @@ function getQuestion($progression, $char)
 function prog()
 {
     $progression = range(5, 23, 2);
-    for ($i = 0; $i < ROUND_COUNT; $i++) {
+    for ($i = 0; $i < ROUNDS_COUNT; $i++) {
         $char = array_rand($progression);
         $correctAnswers[] = $progression[$char];
         $questions[] = getQuestion($progression, $char);
     }
     $gameData = [BRAIN_PROG_RULE, $questions, $correctAnswers];
-    startGame($gameData);
+    runGame($gameData);
 }

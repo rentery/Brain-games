@@ -6,9 +6,9 @@ use function cli\line;
 use function cli\prompt;
 use function cli\err;
 
-const ROUND_COUNT = 3;
+const ROUNDS_COUNT = 3;
 
-function startGame($gameData): void
+function runGame($gameData): void
 {
     [$gameRule, $questions, $correctAnswers] = $gameData;
     line('Welcome to the Brain Game!');
@@ -17,7 +17,7 @@ function startGame($gameData): void
     $userName = prompt('May I have your name?');
     line('Hello, %s!', $userName);
     line();
-    for ($roundCounter = 0; $roundCounter < ROUND_COUNT; $roundCounter++) {
+    for ($roundCounter = 0; $roundCounter < ROUNDS_COUNT; $roundCounter++) {
         $correctAnswer = $correctAnswers[$roundCounter];
         line("Question: %s", $questions[$roundCounter]);
         $userAnswer = prompt("Your answer");
