@@ -12,34 +12,34 @@ Installation with composer
 ## Brain-even
 In the game you need to answer whether the number is even or not
 
-Enter the command **brain-even** to start the game
+Enter the command `brain-even` to start the game
 
 [![asciicast](https://asciinema.org/a/1NRQPygUh5TbXobvIHHHSP1RW.svg)](https://asciinema.org/a/1NRQPygUh5TbXobvIHHHSP1RW)
 
 ## Brain-calc
 In this game you need to calculate result of expression
 
-Enter the command **brain-calc** to start the game
+Enter the command `brain-calc` to start the game
 
 [![asciicast](https://asciinema.org/a/V2kaykG5reZuNb5Me21QHHAQK.svg)](https://asciinema.org/a/V2kaykG5reZuNb5Me21QHHAQK)
 
 ## Brain-gcd
 In this game you need to find greatest common divisor of two numbers
 
-Enter the command **brain-gcd** to start the game
+Enter the command `brain-gcd` to start the game
 
 [![asciicast](https://asciinema.org/a/YvKHB6Y1V1t9g7nhAKR9c1FR1.svg)](https://asciinema.org/a/YvKHB6Y1V1t9g7nhAKR9c1FR1)
 
 ## Brain-progression
 In this game you need to find the missing element of arithmetic progression
 
-Enter the command **brain-progression** to start the game
+Enter the command `brain-progression` to start the game
 
 [![asciicast](https://asciinema.org/a/4WPP9F7GFkHd6h5JgN2b0YbCf.svg)](https://asciinema.org/a/4WPP9F7GFkHd6h5JgN2b0YbCf)
 
 ## Brain-prime
 In the game you need to answer whether a prime number is or not
 
-Enter the command **brain-prime** to start the game
+Enter the command `brain-prime` to start the game
 
 [![asciicast](https://asciinema.org/a/hMGsGcrxHzD5tkybwjeTHr5QE.svg)](https://asciinema.org/a/hMGsGcrxHzD5tkybwjeTHr5QE)
