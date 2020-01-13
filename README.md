@@ -7,6 +7,8 @@ Brain Games - collection of command line games
 ## How to install
 Installation with composer
 
+Enter the command `composer global require dekabruga/php-project-lvl1` to install Brain-games
+
 [![asciicast](https://asciinema.org/a/DMCGSdsOK5SyvqET1ilK7dhNb.svg)](https://asciinema.org/a/DMCGSdsOK5SyvqET1ilK7dhNb)
 
 ## Brain-even
