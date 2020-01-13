@@ -1,13 +1,13 @@
 {
     "name": "dekabruga/php-project-lvl1",
     "keywords": ["games", "brain"],
-    "bin": ["bin/brain-even",
-            "bin/brain-calc",
-            "bin/brain-gcd",
-            "bin/brain-progression",
-            "bin/brain-prime"
+    "bin": [
+        "bin/brain-even",
+        "bin/brain-calc",
+        "bin/brain-gcd",
+        "bin/brain-progression",
+        "bin/brain-prime"
     ],
-
     "type": "project",
     "authors": [
         {
